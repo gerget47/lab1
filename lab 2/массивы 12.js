@@ -1,13 +1,6 @@
-function seq(n) {
-    if(n === 1) return 1;
-    let sum = 0;
-    for(let i = 1; i < n; i++) {
-        sum += seq(i);
-    }
-    return Math.sin(sum);
+let arr = [1,-2,3,-4,5,-6,7,-8];
+for(let i = 0; i < arr.length; i++) {
+    if(i % 2 && arr[i] > 0) arr[i] *= 3;
+    if(i % 2 === 0 && arr[i] < 0) arr[i] /= 5;
 }
-
-console.log(seq(1));
-console.log(seq(2));
-console.log(seq(3));
-console.log(seq(4));
+console.log(arr);
