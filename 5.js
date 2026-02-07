@@ -1,4 +1,5 @@
-let first = 47;
-let second = 47;
-console.log(first === second, first < second, first <= second, first > second);
-
+let str1 = "Кто ";
+let str2 = "ты ";
+let str3 = "такой?";
+let concatenation = str1 + str2 + str3;
+console.log(concatenation);
