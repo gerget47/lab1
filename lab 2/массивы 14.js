@@ -1,13 +1,17 @@
-function seq(n) {
-    if(n === 1) return 1;
-    let sum = 0;
-    for(let i = 1; i < n; i++) {
-        sum += seq(i);
-    }
-    return Math.sin(sum);
+let m = 4, n = 3;
+let matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [10,11,12]
+];
+let sumMax = 0;
+for(let row of matrix) {
+    sumMax += Math.max(...row);
 }
-
-console.log(seq(1));
-console.log(seq(2));
-console.log(seq(3));
-console.log(seq(4));
+let prodMin = 1;
+for(let j = 0; j < n; j++) {
+    let col = matrix.map(row => row[j]);
+    prodMin *= Math.min(...col);
+}
+console.log("Сумма макс:", sumMax, "Произведение мин:", prodMin);
