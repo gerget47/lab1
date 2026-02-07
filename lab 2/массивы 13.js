@@ -1,13 +1,12 @@
-function seq(n) {
-    if(n === 1) return 1;
-    let sum = 0;
-    for(let i = 1; i < n; i++) {
-        sum += seq(i);
+let mat = [
+    [1,-6,3,8,-9],
+    [4,7,-2,5,10],
+    [-3,0,6,-7,2],
+    [9,-4,1,3,-8],
+    [5,2,-5,4,6]
+];
+for(let row of mat) {
+    for(let val of row) {
+        if(val >= -5 && val <= 7) console.log(val);
     }
-    return Math.sin(sum);
 }
-
-console.log(seq(1));
-console.log(seq(2));
-console.log(seq(3));
-console.log(seq(4));
