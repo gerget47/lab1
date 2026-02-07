@@ -1,13 +1,12 @@
-function seq(n) {
-    if(n === 1) return 1;
-    let sum = 0;
-    for(let i = 1; i < n; i++) {
-        sum += seq(i);
+let nums = [5,4,3,2,1];
+let sorted = [...nums].sort((a,b) => b-a);
+if(JSON.stringify(nums) === JSON.stringify(sorted)) {
+    console.log(nums.reverse());
+} else {
+    for(let i = 1; i < nums.length; i++) {
+        if(nums[i] > nums[i-1]) {
+            console.log(i);
+            break;
+        }
     }
-    return Math.sin(sum);
 }
-
-console.log(seq(1));
-console.log(seq(2));
-console.log(seq(3));
-console.log(seq(4));
