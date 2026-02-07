@@ -1,4 +1,6 @@
-let first = 47;
-let second = 47;
-console.log(first === second, first < second, first <= second, first > second);
-
+let str = "20";
+let a = 5;
+console.log(str + a);
+console.log(str - a);
+console.log(str * "2");
+console.log(str / 2);
