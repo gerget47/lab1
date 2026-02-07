@@ -1,4 +1,3 @@
-let first = 47;
-let second = 47;
-console.log(first === second, first < second, first <= second, first > second);
-
+let g = "12";
+let h = "7.15";
+console.log(Math.round(Number(g) % Number(h)));
