@@ -1,13 +1,5 @@
-function seq(n) {
-    if(n === 1) return 1;
-    let sum = 0;
-    for(let i = 1; i < n; i++) {
-        sum += seq(i);
-    }
-    return Math.sin(sum);
-}
-
-console.log(seq(1));
-console.log(seq(2));
-console.log(seq(3));
-console.log(seq(4));
+let arr1 = [1,2,5,4,6], arr2 = [8,2,5,9,5];
+let merged = [...arr1, ...arr2].sort((a,b) => a-b);
+let mid = Math.floor(merged.length / 2);
+let median = merged.length % 2 ? merged[mid] : (merged[mid-1] + merged[mid]) / 2;
+console.log(median);
