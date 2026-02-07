@@ -1,4 +1,2 @@
-let first = 47;
-let second = 47;
-console.log(first === second, first < second, first <= second, first > second);
-
+let m = 7
+console.log((Math.pow(m, 2) - 7 * m + 10) / (Math.pow(m, 2) - 8 * m + 12));
