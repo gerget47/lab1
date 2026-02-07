@@ -1,13 +1,8 @@
-function seq(n) {
-    if(n === 1) return 1;
-    let sum = 0;
-    for(let i = 1; i < n; i++) {
-        sum += seq(i);
-    }
-    return Math.sin(sum);
+let books = {
+    "Пушкин": ["Евгений Онегин", "Руслан и Людмила"],
+    "Есенин": ["Черный человек", "Исповедь хулигана"],
+    "Данцова": ["Уха из золотой рыбки", "Доллары царя Гороха"]
+};
+for(let author in books) {
+    console.log(author + ": " + books[author].join(", "));
 }
-
-console.log(seq(1));
-console.log(seq(2));
-console.log(seq(3));
-console.log(seq(4));
