@@ -1,13 +1,2 @@
-function seq(n) {
-    if(n === 1) return 1;
-    let sum = 0;
-    for(let i = 1; i < n; i++) {
-        sum += seq(i);
-    }
-    return Math.sin(sum);
-}
-
-console.log(seq(1));
-console.log(seq(2));
-console.log(seq(3));
-console.log(seq(4));
+let arr2 = ['c',5,2,'b',3,1,4,'a'];
+console.log(arr2.sort());
