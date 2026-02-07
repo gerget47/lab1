@@ -1,6 +1,13 @@
-let q = 1;
-let w = true;
-let e = "string";
-let r = 47n;
-let t = null;
-console.log(typeof(q), typeof(w), typeof(e), typeof(r), typeof(t));
+function seq(n) {
+    if(n === 1) return 1;
+    let sum = 0;
+    for(let i = 1; i < n; i++) {
+        sum += seq(i);
+    }
+    return Math.sin(sum);
+}
+
+console.log(seq(1));
+console.log(seq(2));
+console.log(seq(3));
+console.log(seq(4));
