@@ -1,6 +1,10 @@
-let q = 1;
-let w = true;
-let e = "string";
-let r = 47n;
-let t = null;
-console.log(typeof(q), typeof(w), typeof(e), typeof(r), typeof(t));
+function checkAge(age) {
+    if(age < 18) {
+        console.log('Привет, малыш!');
+    } else {
+        console.log('Здравствуйте, юноша!');
+    }
+}
+
+checkAge(17); 
+checkAge(19);
