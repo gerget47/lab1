@@ -1,34 +1,11 @@
-let age = 17;
-
-console.log("1 ");
-if (age >= 18 && age <= 30) {
-    console.log("Для молодежи");
-} else {
-    console.log("Для всех возрастов");
-}
- 
-console.log("\n2");
-if (age >= 18 && age <= 30) {
-    console.log("Для молодежи");
-} else if (age >= 1 && age <= 17) {
-    console.log("Для детей");
-} else {
-    console.log("Для всех возрастов");
+console.log(`while`);
+let i = 1;
+while(i <= 50) {
+    console.log(i);
+    i += 2;
 }
 
-// Можно проверить с разными значениями age
-console.log("\nПроверка с разными значениями:");
-let testAges = [15, 22, 35, 0, 18, 30];
-
-for (let i = 0; i < testAges.length; i++) {
-    let currentAge = testAges[i];
-    console.log("\nВозраст: " + currentAge);
-    
-    if (currentAge >= 18 && currentAge <= 30) {
-        console.log("Для молодежи");
-    } else if (currentAge >= 1 && currentAge <= 17) {
-        console.log("Для детей");
-    } else {
-        console.log("Для всех возрастов");
-    }
+console.log(`\nfor`);
+for(let j = 1; j <= 50; j += 2) {
+    console.log(j);
 }
