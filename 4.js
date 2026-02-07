@@ -1,4 +1,16 @@
-let first = 47;
-let second = 47;
-console.log(first === second, first < second, first <= second, first > second);
-
+console.log("1" + 2 + 3);
+console.log(1 + 2 + "3");
+console.log("1" - 2);
+console.log("1" + -2);
+console.log("1" + "1" - "1");
+console.log("foo" + -"bar");
+console.log(0 === "0");
+console.log(0.5 + 0.1 === 0.6);
+console.log(0.1 + 0.2 === 0.3);
+console.log(true + true + true === 3);
+console.log(true == 1);
+console.log(true === 1);
+console.log(1 < 2 < 3);
+console.log(3 > 2 > 1);
+console.log(9007199254740991 + 1 == 9007199254740991 + 2);
+console.log(Math.sqrt(-1) == Math.sqrt(-1));
